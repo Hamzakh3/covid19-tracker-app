@@ -1,0 +1,36 @@
+.root{
+    max-width: 365px;
+    min-width: 250px;
+    margin: 4px;
+    background-color: rgb(32, 32, 32) !important;
+    border-right: 10px solid;
+}
+.root:hover{
+    background-color: rgb(10, 10, 10) !important;
+    transition: all 0.2s ease-in;
+
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Confirmed{
+    color: orange !important;
+}
+.Recovered{
+    color: green !important;
+}
+.Deaths{
+    color: red !important;
+}
+
+@media (max-width:768px){
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }   
+}

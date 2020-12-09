@@ -1,0 +1,12 @@
+.picker{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    scroll-behavior: smooth;
+
+}
+h4{
+    color: whitesmoke;
+    text-align: center;
+}

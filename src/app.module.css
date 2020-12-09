@@ -1,0 +1,74 @@
+body{
+    background:linear-gradient( rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 0.9)100%),url("../src/assets/backgroundCovid.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0px 10px 0px 30px;
+    position: relative;
+
+    min-height: 100vh;
+}
+.cards{
+    flex-basis: 1;
+    margin-top: 70px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.heading{
+    position: fixed;
+    width: 100% !important;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 32px;
+    color: whitesmoke;
+    background-color: rgb(177, 95, 95);
+}
+@media (max-width:768px){
+    body{
+        background:linear-gradient( rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 0.9)100%),url("../src/assets/backgroundCovid.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .heading{
+        text-align: center;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: rgb(177, 95, 95);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px 10px 20px 10px;
+    }
+    .cards{
+        flex-basis: none;
+        margin-bottom: 0px;
+    }   
+}
