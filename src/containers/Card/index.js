@@ -4,7 +4,7 @@ import style from './card.module.css'
 
 
 
-export default ({data, country}) => {
+const Card = ({data, country}) => {
     return (
         <div class={style.cardContainer}>
             {data.length ? data.map((item) => {
@@ -18,4 +18,4 @@ export default ({data, country}) => {
         </div>
     )
 }
-
+export default Card

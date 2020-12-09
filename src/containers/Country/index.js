@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './country.module.css'
 import {countries} from '../../API'
 
-export default (props) => {
+const Country = (props) => {
 const [countryNames, setCountryNames] = useState([])
 // const [countryName, setCountryName] = useState('')
 
@@ -30,3 +30,4 @@ const [countryNames, setCountryNames] = useState([])
     )
 }
 
+export default Country

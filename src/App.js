@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <h1 className={style.heading}>
-        <img src={covid} width='40'/> <p>COVID 19 TRACKING APP</p>
+        <img src={covid} width='40' alt='Covid-19/'> </img> <p>COVID 19 TRACKING APP</p>
     </h1>
       <div className={style.container}>
 
