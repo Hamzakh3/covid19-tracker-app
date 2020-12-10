@@ -17,14 +17,15 @@ body{
 }
 .cards{
     flex-basis: 1;
-    margin-top: 70px;
+    /* margin-top: 90px; */
 }
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 85%;
+    /* margin-top: 50px; */
 }
 .heading{
     position: fixed;
@@ -69,6 +70,9 @@ body{
     }
     .cards{
         flex-basis: none;
-        margin-bottom: 0px;
+        margin-top: 55px;
     }   
+    .content{
+        width: 100% !important;
+    }
 }

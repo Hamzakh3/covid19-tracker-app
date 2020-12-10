@@ -17,16 +17,16 @@ const Chart = ({ cardsData, country }) => {
     }, [])
     const LineChart = () => {
         return <Line
-        
+
             data={{
                 labels: chartData.map(({ date }) => date),
-    
+
                 datasets: [{
                     data: chartData.map(({ confirmed }) => confirmed),
                     label: 'Confirmed',
                     borderColor: 'red',
                     fill: true
-                    
+
                 },
                 {
                     data: chartData.map(({ deaths }) => deaths),
@@ -43,37 +43,37 @@ const Chart = ({ cardsData, country }) => {
     }
     // console.log(cardsData)
     const BarChart = () => {
-     return <Bar
-                data={{
-                    labels: cardsData.map((item) => item.keyTxt),
-                    datasets: [
-                        {
-                            label: 'People',
-                            backgroundColor: ['rgba(255,0,0,0.5)', 'rgba(0,255,0,0.5)', 'rgba(255,165,0,0.5)'],
-                            borderColor: ['rgba(255,0,0,1)', 'rgba(0,255,0,1)', 'rgba(255,165,0,1)'],
-                            borderWidth: 2,
-                            data: cardsData.map((item) => item.value)
-                        }
+        return <Bar
+            data={{
+                labels: cardsData.map((item) => item.keyTxt),
+                datasets: [
+                    {
+                        label: 'People',
+                        backgroundColor: ['rgba(255,0,0,0.5)', 'rgba(0,255,0,0.5)', 'rgba(255,165,0,0.5)'],
+                        borderColor: ['rgba(255,0,0,1)', 'rgba(0,255,0,1)', 'rgba(255,165,0,1)'],
+                        borderWidth: 2,
+                        data: cardsData.map((item) => item.value)
+                    }
 
-                    ]
-                }}
-                options={{
-                    title: {
-                        display: true,
-                        text: `Current Covid-19 Situation in ${country}`,
-                        fontSize: 22
-                    },
-                    legend: {
-                        display: false,
-                        position: 'right'
-                    },
-                   
-                }}
-            />
-            
-            }
+                ]
+            }}
+            options={{
+                title: {
+                    display: true,
+                    text: `Current Covid-19 Situation in ${country}`,
+                    fontSize: 22
+                },
+                legend: {
+                    display: false,
+                    position: 'right'
+                },
 
-    
+            }}
+        />
+
+    }
+
+
     return (
 
 
